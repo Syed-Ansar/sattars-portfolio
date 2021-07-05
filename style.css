@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: rgba(13, 107, 107, 0.26);
+}
+.main {
+  width: 70%;
+}
+.img img {
+  width: 100%;
+  min-height: min-content;
+}
+h1 {
+  width: 100%;
+  color: rgb(26, 92, 92);
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Questrial", sans-serif;
+  margin-left: 1.5rem;
+  background-color: rgba(13, 107, 107, 0.26);
+}
+h2 {
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-family: "Questrial", sans-serif;
+}
+p {
+  line-height: 1.4;
+  margin: 1rem 0 1.5rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+}
+li {
+  margin: 0rem 0 1.5rem 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 5px !important;
+}
+.myskills {
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Sans Pro", sans-serif;
+  list-style-type: square;
+  font-size: 1.2rem;
+}
+
+.side__bar {
+  top: 0;
+  right: 0;
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+}
+.photo img {
+  margin-top: 3rem;
+  width: 45%;
+  border-radius: 50%;
+}
+.sidebar {
+  color: white;
+  text-align: center;
+  background-color: teal;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+.sidebar h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+a:hover {
+  color: aquamarine;
+}
+.sidebar_skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_me {
+  padding-bottom: 3rem;
+}
+.contact {
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+button {
+  cursor: pointer;
+  margin-left: 1rem;
+  background-color: teal;
+  border: none;
+  border-radius: 2rem;
+  width: 15rem;
+  height: 3rem;
+}
