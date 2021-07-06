@@ -4,21 +4,26 @@
   box-sizing: border-box;
 }
 .body {
+  display: flex;
+  flex-direction: row;
   background-color: rgba(13, 107, 107, 0.26);
 }
 .main {
-  width: 70%;
+  width: 100%;
 }
 .img img {
-  width: 100%;
+  width: 100% !important;
   min-height: min-content;
 }
 h1 {
-  width: 100%;
+  width: 50%;
+  border-radius: 0.5rem;
   color: rgb(26, 92, 92);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   font-family: "Questrial", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: 1.5rem;
   background-color: rgba(13, 107, 107, 0.26);
 }
@@ -31,8 +36,10 @@ h2 {
   font-family: "Questrial", sans-serif;
 }
 p {
+  max-width: 70%;
   line-height: 1.4;
-  margin: 1rem 0 1.5rem 2rem;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 1.3rem;
   font-weight: 400;
   font-family: "Source Sans Pro", sans-serif;
@@ -51,10 +58,12 @@ li {
 }
 
 .side__bar {
+  display: flex;
+  flex-direction: row-reverse;
   top: 0;
   right: 0;
   position: fixed;
-  width: 20%;
+  max-width: 20%;
   height: 100%;
   overflow: hidden;
 }
@@ -90,13 +99,15 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-
 .contact_me {
   padding-bottom: 3rem;
 }
 .contact {
-  padding-left: 3rem;
-  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3rem;
 }
 button {
   cursor: pointer;
@@ -106,4 +117,39 @@ button {
   border-radius: 2rem;
   width: 15rem;
   height: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 12px;
+  }
+  .body {
+    flex-direction: column-reverse;
+  }
+  .main {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    max-width: 100%;
+  }
+  .side__bar {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    position: unset;
+    min-width: 100%;
+  }
+  .sidebar_skills {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 1.5rem;
+  }
 }
