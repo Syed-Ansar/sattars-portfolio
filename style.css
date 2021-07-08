@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .body {
   display: flex;
   flex-direction: row;
@@ -118,6 +119,9 @@ button {
   width: 15rem;
   height: 3rem;
 }
+#menu {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
   * {
@@ -141,15 +145,32 @@ button {
     max-width: 100%;
   }
   .side__bar {
-    flex-direction: column;
     top: 0;
     left: 0;
     position: unset;
     min-width: 100%;
+    height: 480px;
+    text-align: center;
   }
   .sidebar_skills {
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 1.5rem;
+    width: 100%;
+    display: none;
+    padding: 4px;
+    background-color: rgb(18, 114, 114);
+    border-radius: 15px;
+  }
+  .sidebar_skills a {
+    border-radius: 15px;
+    margin: 4px;
+  }
+  #menu {
+    font-size: 1.2rem;
+    font-family: "Source Sans Pro", sans-serif;
+    display: unset;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    position: absolute;
+    right: 30px;
   }
 }
